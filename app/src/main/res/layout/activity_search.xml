@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF5E6"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/bar_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topBar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#03A9F4">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/background_selector"
+            android:clickable="true">
+
+            <com.example.liaozhenbin.wenote.view.BackImage
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="9dp">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableLeft="@mipmap/search"
+                android:hint="search"
+                android:singleLine="true"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:background="#FFF" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_notFind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="25sp"
+            android:textColor="#78909C"
+            android:visibility="invisible"
+            android:text="抱歉，未找到相关结果"/>
+
+        <ListView
+            android:id="@+id/list_view_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

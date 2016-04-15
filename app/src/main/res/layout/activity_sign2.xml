@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF5E6"
+    android:orientation="vertical">
+
+    <FrameLayout android:id="@+id/bar_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topBar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@mipmap/signup"/>
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFE4B5"
+        android:hint="Username"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFE4B5"
+        android:hint="Password"
+        android:password="true"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/et_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFE4B5"
+        android:hint="ConfirmPassword"
+        android:password="true"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/bt_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bt_login_selector"
+        android:text="Sign Up"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:clickable="true"
+        android:text="Login in"
+        android:textColor="#5CACEE"
+        android:textSize="15sp" />
+</LinearLayout>

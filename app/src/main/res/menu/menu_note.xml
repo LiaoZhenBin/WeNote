@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_search"
+        android:title="查找"
+        android:icon="@mipmap/search"
+        android:showAsAction="always"
+        />
+
+    <item android:id="@+id/action_more"
+        android:title="更多"
+        android:showAsAction="never"/>
+</menu>

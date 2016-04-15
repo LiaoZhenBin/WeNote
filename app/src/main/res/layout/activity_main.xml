@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout android:id="@+id/bar_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topBar" />
+
+    <FrameLayout android:id="@+id/bar_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#03A9F4"/>
+
+        <com.example.liaozhenbin.wenote.view.LineAnimation
+            android:id="@+id/anim_wave"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="#B5B5B5" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+            android:id="@+id/rb_index"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/index"
+            android:gravity="center"
+            android:text="index"
+            android:textColor="@drawable/radio_group_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_write"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/write"
+            android:gravity="center"
+            android:text="text"
+            android:textColor="@drawable/radio_group_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_weather"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/weather"
+            android:gravity="center"
+            android:text="weather"
+            android:textColor="@drawable/radio_group_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/more"
+            android:gravity="center"
+            android:text="more"
+            android:textColor="@drawable/radio_group_selector" />
+    </RadioGroup>
+
+</LinearLayout>
